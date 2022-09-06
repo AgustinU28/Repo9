@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&display=swap');
+
+
+html{
+    font-size: 62.5%;
+}
+
+h1{
+    color:white;
+    font-size: 3rem;
+   
+   
+   
+}
+h2{
+    color:white;
+    font-size: 2rem;
+    
+    
+   
+}
+
+main section p {
+
+    color: gray;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2rem;
+    
+}
+
+main  p {
+
+    color: gray;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2rem;
+}
+h1,h2{
+    background-color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 3rem;
+    
+
+}
+
+.bg-light{
+
+    background-color: #e2e2e2;
+}
+
+.botonera{
+
+    background-color: rgba(144, 6, 6, 50);
+		position: sticky;
+		top: 0;
+		padding: 10px 30px;
+	
+}
+
+.botonera img{
+    width: 150px;
+    margin-bottom: 25px;
+}
+
+.botonera ul{
+    
+    display: flex;
+}
+
+.botonera ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+    .botonera ul li a{
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: white;
+    }
+
+    
+    .botonera ol li a:hover{
+        color: black;
+        font-weight: 600;
+    }
+
+nav ul{
+
+    list-style: none;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    
+
+}
+
+.contenedor{
+height: auto;
+width: 100%;
+display: grid;
+grid-template-columns: 25px 25px 25px 25px;
+grid-template-rows:repeat(4 ,100px );
+gap: 10px;
+}
+
+
+
+
+@media (min-width: 768px){
+	.contenedor{
+        grid-template-rows:repeat(4 ,100px );
+		
+	}
+
+    .botonera{
+        grid-template-rows:repeat(4 ,100px );
+    
+}
+
+
+nav ul li a {
+    color: white;  
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2rem;
+    padding: 6px 20px;
+}
+
+
+
+nav {
+  
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a img {
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-center{
+
+    text-align: center;
+}
+
+
+.text-left{
+    text-align: left;
+    color: red;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.text-italic{
+    font-style: italic;
+}
+
+.text-bold{
+    font-weight: 800;
+}
+
+
+
+
+body{
+    background-image: url(../img/imprenta.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
