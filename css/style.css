@@ -44,7 +44,7 @@ h1,h2{
 
 .bg-light{
 
-    background-color: #e2e2e2;
+    background-color: white;
 }
 
 .botonera{
@@ -106,6 +106,7 @@ display: grid;
 grid-template-columns: 25px 25px 25px 25px;
 grid-template-rows:repeat(4 ,100px );
 gap: 10px;
+background-color:brown;
 }
 
 
@@ -140,6 +141,7 @@ nav {
     align-items: center;
     display: flex;
     flex-direction:column;
+    background-color: rgb(100, 0, 0);
 }
 
 nav a img {
@@ -187,6 +189,8 @@ body{
 }
 
 }
+
+
 
 
 
