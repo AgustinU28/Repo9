@@ -93,102 +93,179 @@ nav ul{
 
 }
 nav ul li{
-    display: inline-block;
+    display: flex;
     margin-right: 20px;
     
 
 }
 
-.contenedor{
-height: auto;
+header img{
 width: 100%;
-display: grid;
-grid-template-columns: 25px 25px 25px 25px;
-grid-template-rows:repeat(4 ,100px );
-gap: 10px;
-background-color:brown;
+
+}
+
+.contenedor{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav" 
+	"header" 
+	"productos" 
+	"filtros" 
+	"aside" 
+	"footer";
+}
+
+
+#mainNav{
+	grid-area: nav;
+}
+
+#header{
+	grid-area: header;
+}
+
+#filtros{
+	grid-area: filtros;
 }
 
 
 
+#aside{
+	background-color: rgba(238, 188, 247, .5);
+	padding: 20px 0;
+	grid-area: aside;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+
+
+.botonera {
+		background-color: rgb(100, 0, 0);
+		position: sticky;
+		top: 0;
+		padding: 10px 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.botonera img{
+		width: 200px;
+		margin-bottom: 30px;
+	}
+
+	.botonera ul{
+	
+		display: flex;
+	}
+
+	.botonera ul li{
+		list-style: none;
+		margin-right: 20px;
+	}
+
+		.botonera ul li a{
+			font-size: 1.8rem;
+			text-decoration: none;
+			color: white;
+		}
+
+		
+		.botonera ol li a:hover{
+			color: black;
+			font-weight: 600;
+		}
 
 @media (min-width: 768px){
 	.contenedor{
-        grid-template-rows:repeat(4 ,100px );
-		
+		grid-template-columns: 30vw 70vw;
+		grid-template-areas: 
+		"nav nav" 
+		"header header" 
+		"filtros productos"
+		"aside aside" 
+		"footer footer";
 	}
 
-    .botonera{
-        grid-template-rows:repeat(4 ,100px );
-    
+	
+	#productos .galeria{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	#productos .galeria figure{
+		width: 90%;
+	}
+
+	
+	#aside{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
 }
 
 
-nav ul li a {
-    color: white;  
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 2rem;
-    padding: 6px 20px;
-  
-    
+@media (min-width: 1024px){
+	
+	.contenedor{
+		display: grid;
+		grid-template-columns: 20vw 70vw 10vw;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"nav nav nav" 
+		"header header header" 
+		"filtros productos aside" 
+		"footer footer footer";
+	}
+
+	
+	#aside{
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+
+	#aside img{
+		width: 70%;
+	}
+
+
+	#productos .galeria figure{
+		width: 80%;
+	}
+
+
+	.botonera{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	
+		.botonera img{
+			margin-bottom: 0;
+		}
 }
 
 
-
-nav {
-  
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    flex-direction:column;
-    background-color: rgb(100, 0, 0);
-}
-
-nav a img {
-    
-    justify-content: space-between;
-    align-items: center;
-
-    
-}
-
-.text-center{
-
-    text-align: center;
-}
-
-
-.text-left{
-    text-align: left;
-    color: red;
-}
-
-.text-right{
-    text-align: right;
-}
-
-.text-justify{
-    text-align: justify;
-}
-
-.text-italic{
-    font-style: italic;
-}
-
-.text-bold{
-    font-weight: 800;
+.form-label{
+width: 100px;
+color: white;
+background-color:black;
+font-size:5ex;
 }
 
 
 
 
-body{
-    background-image: url(../img/imprenta.jpg);
-    background-repeat: repeat;
-    background-attachment: fixed;
-}
-
-}
 
 
 
